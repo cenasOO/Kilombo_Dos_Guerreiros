@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilombo Dos Guerreiros - Capoeira</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #1e4620; /* Verde Escuro */
+            color: #f9bc15; /* Amarelo Ouro */
+            text-align: center;
+            padding: 20px;
+        }
+        .conteudo {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1e4620;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kilombo Dos Guerreiros</h1>
+        <p>A arte, a cultura e a ginga da Capoeira</p>
+    </header>
+
+    <div class="conteudo">
+        <h2>O que é a Capoeira?</h2>
+        <p>A capoeira é uma expressão cultural brasileira que mistura arte marcial, esporte, cultura popular, dança e música. Criada por africanos escravizados no Brasil, ela é um símbolo de resistência e liberdade.</p>
+        
+        <h2>Elementos Principais</h2>
+        <ul>
+            <li><strong>A Ginga:</strong> O movimento básico de pernas e braços.</li>
+            <li><strong>A Roda:</strong> O círculo onde os capoeiristas jogam.</li>
+            <li><strong>O Berimbau:</strong> O instrumento principal que comanda o ritmo do jogo.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
