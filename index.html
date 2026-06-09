@@ -120,6 +120,31 @@
         strong {
             color: #0056b3;
         }
+
+        /* Nova estrutura lado a lado para o texto de Zumbi e a Imagem Azul */
+        .tabela-secao {
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+            margin-top: 15px;
+        }
+        .coluna-texto-secao {
+            width: 60%;
+            vertical-align: top;
+            padding-right: 20px;
+        }
+        .coluna-imagem-secao {
+            width: 40%;
+            vertical-align: top;
+            text-align: center;
+        }
+        .imagem-secao {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
@@ -144,10 +169,23 @@
                     <div class="conteudo">
                         
                         <h2>História da Capoeira</h2>
-                        <p>A capoeira é uma manifestação cultural afro-brasileira que mistura luta, dança, música e jogo. Surgiu no Brasil entre africanos escravizados, principalmente de origem Bantu, que adaptaram rituais como o N’golo de Angola para criar uma forma de resistência e defesa disfarçada de dança. Criminalizada em 1890, sobreviveu na marginalidade até ser legalizada por Mestre Bimba em 1937, que criou a Capoeira Regional com método e graduação. Paralelo a isso, Mestre Pastinha organizou a Capoeira Angola, preservando os rituais mais tradicionais, lentos e rasteiros. Reconhecida como esporte em 1972, a roda de capoeira é Patrimônio Cultural Brasileiro desde 2008 e Patrimônio Imaterial da Humanidade pela UNESCO desde 2014. Hoje representa luta, ancestralidade e identidade do povo negro.</p>
+                        <p>A capoeira é uma manifestação cultural afro-brasileira que mistura luta, dança, música e jogo. Surgiu no Brasil entre africanos escravizados, principalmente de origem Bantu, que adaptaram rituais como o N’golo de Angola para criar uma forma de resistência e defense disfarçada de dança. Criminalizada em 1890, sobreviveu na marginalidade até ser legalizada por Mestre Bimba em 1937, que criou a Capoeira Regional com método e graduação. Paralelo a isso, Mestre Pastinha organizou a Capoeira Angola, preservando os rituais mais tradicionais, lentos e rasteiros. Reconhecida como esporte em 1972, a roda de capoeira é Patrimônio Cultural Brasileiro desde 2008 e Patrimônio Imaterial da Humanidade pela UNESCO desde 2014. Hoje representa luta, ancestralidade e identidade do povo negro.</p>
 
-                        <h2>O que é a Capoeira?</h2>
-                        <p>A capoeira é uma expressão cultural brasileira que mistura arte marcial, esporte, cultura popular, dança e música. Criada por africanos escravizados no Brasil, ela é um símbolo de resistência e liberdade.</p>
+                        <h2>Zumbi dos Palmares</h2>
+                        <table class="tabela-secao">
+                            <tr>
+                                <td class="coluna-texto-secao">
+                                    <p>Zumbi nasceu livre em 1655, no Quilombo dos Palmares, em Alagoas. Foi capturado ainda criança e criado por um padre, onde aprendeu português e latim. Aos 15 anos fugiu e voltou pra Palmares.</p>
+                                    <p>Virou o último e mais famoso líder do quilombo em 1678. Palmares era uma comunidade de mais de 20 mil pessoas, formada por negros fugidos, indígenas e brancos pobres que viviam livres da escravidão.</p>
+                                    <p>Zumbi comandou a resistência contra dezenas de ataques dos portugueses e bandeirantes por quase 20 anos. Defendia a liberdade total e não aceitava acordo pra libertar só parte do povo.</p>
+                                    <p>Foi traído e morto em 20 de novembro de 1695. A cabeça foi exposta em praça pública.</p>
+                                    <p>Hoje, 20 de novembro é o Dia da Consciência Negra. Zumbi virou símbolo da luta, resistência e liberdade do povo negro no Brasil.</p>
+                                </td>
+                                <td class="coluna-imagem-secao">
+                                    <img src="imagem 2026-06-09 18451479.png" alt="Zumbi dos Palmares" class="imagem-secao">
+                                </td>
+                            </tr>
+                        </table>
                         
                         <h2>Elementos Principais</h2>
                         <ul>
