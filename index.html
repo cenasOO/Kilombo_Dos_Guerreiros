@@ -47,20 +47,54 @@
             background-color: white;
             padding: 5px;
         }
-        .conteudo {
-            max-width: 800px;
+
+        /* Estrutura para colocar a árvore à esquerda e o conteúdo à direita */
+        .layout-principal {
+            display: block;
+            max-width: 1100px;
             margin: 20px auto 50px auto;
-            padding: 35px;
+            padding: 0 20px;
+        }
+
+        /* Tabela simulando colunas (compatível com visualizadores estáticos) */
+        .tabela-layout {
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+        }
+
+        .coluna-arvore {
+            width: 25%;
+            vertical-align: top;
+            padding-right: 30px;
+            text-align: center;
+        }
+
+        .arvore-imagem {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .coluna-conteudo {
+            width: 75%;
+            vertical-align: top;
+        }
+
+        .conteudo {
             background: #ffffff;
+            padding: 35px;
             border-radius: 12px;
             box-shadow: 0 6px 20px rgba(0,0,0,0.05);
             border-top: 5px solid #d32f2f; /* Detalhe vermelho da corda externa do logo */
         }
+
         h2 {
             color: #1e592f; /* Título em verde capoeira */
             border-bottom: 3px solid #f9bc15; /* Linha amarela */
             padding-bottom: 8px;
-            margin-top: 25px;
+            margin-top: 30px;
             font-size: 1.6rem;
         }
         h2:first-of-type {
@@ -70,6 +104,7 @@
             font-size: 1.15rem;
             line-height: 1.7;
             color: #333333;
+            text-align: justify;
         }
         ul {
             line-height: 2.2;
@@ -98,16 +133,33 @@
         <img src="imagem_2026-06-09_173344569.png" alt="Logo Mestre Kilombo dos Guerreiros" class="logo-site">
     </div>
 
-    <div class="conteudo">
-        <h2>O que é a Capoeira?</h2>
-        <p>A capoeira é uma expressão cultural brasileira que mistura arte marcial, esporte, cultura popular, dança e música. Criada por africanos escravizados no Brasil, ela é um símbolo de resistência e liberdade.</p>
-        
-        <h2>Elementos Principais</h2>
-        <ul>
-            <li><strong>A Ginga:</strong> O movimento básico de pernas e braços.</li>
-            <li><strong>A Roda:</strong> O círculo onde os capoeiristas jogam.</li>
-            <li><strong>O Berimbau:</strong> O instrumento principal que comanda o ritmo do jogo.</li>
-        </ul>
+    <div class="layout-principal">
+        <table class="tabela-layout">
+            <tr>
+                <td class="coluna-arvore">
+                    <img src="ChatGPT Image 9_06_2026, 17_52_52.png" alt="Árvore Kilombo dos Guerreiros" class="arvore-imagem">
+                </td>
+
+                <td class="coluna-conteudo">
+                    <div class="conteudo">
+                        
+                        <h2>História da Capoeira</h2>
+                        <p>A capoeira é uma manifestação cultural afro-brasileira que mistura luta, dança, música e jogo. Surgiu no Brasil entre africanos escravizados, principalmente de origem Bantu, que adaptaram rituais como o N’golo de Angola para criar uma forma de resistência e defesa disfarçada de dança. Criminalizada em 1890, sobreviveu na marginalidade até ser legalizada por Mestre Bimba em 1937, que criou a Capoeira Regional com método e graduação. Paralelo a isso, Mestre Pastinha organizou a Capoeira Angola, preservando os rituais mais tradicionais, lentos e rasteiros. Reconhecida como esporte em 1972, a roda de capoeira é Patrimônio Cultural Brasileiro desde 2008 e Patrimônio Imaterial da Humanidade pela UNESCO desde 2014. Hoje representa luta, ancestralidade e identidade do povo negro.</p>
+
+                        <h2>O que é a Capoeira?</h2>
+                        <p>A capoeira é uma expressão cultural brasileira que mistura arte marcial, esporte, cultura popular, dança e música. Criada por africanos escravizados no Brasil, ela é um símbolo de resistência e liberdade.</p>
+                        
+                        <h2>Elementos Principais</h2>
+                        <ul>
+                            <li><strong>A Ginga:</strong> O movimento básico de pernas e braços.</li>
+                            <li><strong>A Roda:</strong> O círculo onde os capoeiristas jogam.</li>
+                            <li><strong>O Berimbau:</strong> O instrumento principal que comanda o ritmo do jogo.</li>
+                        </ul>
+                        
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
 </body>
