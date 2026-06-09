@@ -9,46 +9,62 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f9fa; /* Fundo do site limpo */
-            color: #1a2a3a; /* Texto principal azul escuro para leitura perfeita */
+            background-color: #faf8f5; /* Fundo off-white muito elegante */
+            color: #1a1a1a;
         }
         header {
-            /* Mistura suave de Verde, Amarelo e Azul inspirada na corda */
+            /* Fundo gradiente inspirado no mapa do Brasil e na corda */
             background: linear-gradient(135deg, #1e592f 0%, #f9bc15 50%, #0056b3 100%);
-            color: #ffffff; /* Texto do título em branco para destacar */
+            color: #ffffff;
             text-align: center;
-            padding: 60px 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            padding: 50px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
         }
         h1 {
             margin: 0;
-            font-size: 2.6rem;
+            font-size: 2.4rem;
             font-weight: 900;
             text-transform: uppercase;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra para o texto não sumir no fundo */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             letter-spacing: 1px;
         }
         header p {
-            margin: 15px 0 0 0;
-            font-size: 1.3rem;
+            margin: 12px 0 0 0;
+            font-size: 1.25rem;
             font-weight: bold;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
         }
+        .container-logo {
+            text-align: center;
+            margin: -40px auto 20px auto; /* Faz a foto flutuar ligeiramente sobre o cabeçalho */
+        }
+        .logo-site {
+            max-width: 280px; /* Tamanho ideal para o logo circular */
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            background-color: white;
+            padding: 5px;
+        }
         .conteudo {
             max-width: 800px;
-            margin: 40px auto;
+            margin: 20px auto 50px auto;
             padding: 35px;
             background: #ffffff;
             border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-            border-left: 6px solid #0056b3; /* Detalhe azul na lateral */
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+            border-top: 5px solid #d32f2f; /* Detalhe vermelho da corda externa do logo */
         }
         h2 {
-            color: #1e592f; /* Subtítulos em verde capoeira */
-            border-bottom: 3px solid #f9bc15; /* Linha amarela abaixo do subtítulo */
+            color: #1e592f; /* Título em verde capoeira */
+            border-bottom: 3px solid #f9bc15; /* Linha amarela */
             padding-bottom: 8px;
-            margin-top: 0;
+            margin-top: 25px;
             font-size: 1.6rem;
+        }
+        h2:first-of-type {
+            margin-top: 0;
         }
         p {
             font-size: 1.15rem;
@@ -59,15 +75,15 @@
             line-height: 2.2;
             font-size: 1.15rem;
             padding-left: 20px;
-            list-style-type: none; /* Tira as bolinhas padrões */
+            list-style-type: none;
         }
         li::before {
             content: "➔ ";
-            color: #f9bc15; /* Setinha amarela antes de cada item */
+            color: #f9bc15;
             font-weight: bold;
         }
         strong {
-            color: #0056b3; /* Destaque em azul */
+            color: #0056b3;
         }
     </style>
 </head>
@@ -77,6 +93,10 @@
         <h1>Centro Cultural De Capoeira Kilombo Dos Guerreiros</h1>
         <p>A arte, a cultura e a ginga da Capoeira</p>
     </header>
+
+    <div class="container-logo">
+        <img src="imagem_2026-06-09_173344569.png" alt="Logo Mestre Kilombo dos Guerreiros" class="logo-site">
+    </div>
 
     <div class="conteudo">
         <h2>O que é a Capoeira?</h2>
